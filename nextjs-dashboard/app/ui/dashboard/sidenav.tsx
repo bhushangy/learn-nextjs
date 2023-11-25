@@ -1,9 +1,10 @@
-import Link from 'next/link';
-import NavLinks from '@/app/ui/dashboard/nav-links';
-import AcmeLogo from '@/app/ui/acme-logo';
-import { PowerIcon } from '@heroicons/react/24/outline';
+import Link from "next/link";
+import NavLinks from "@/app/ui/dashboard/nav-links";
+import AcmeLogo from "@/app/ui/acme-logo";
+import { PowerIcon } from "@heroicons/react/24/outline";
 
 export default function SideNav() {
+  console.log("SideNav"); // This will not be logged on browser console because this comoponent is rendered on server side.
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
       <Link
